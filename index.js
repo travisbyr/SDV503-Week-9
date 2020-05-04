@@ -71,3 +71,29 @@ console.log(money(7, "S$"));
 console.log("Hello Class");
 const arr = ["a", "b", "c"];
 console.log(arr);
+
+console.log('Hello World!'[6])
+const txt = ('Hello World!')
+console.log(txt[5] = "-") // Cannot modified string, instead make a new string using original values
+console.log(txt)
+
+//Anonymous functions
+
+const anotherWay = function(x) {console.log(x)}
+anotherWay('Hello Class');
+
+//function literal
+(function(x, y) {console.log(x + y)})(5, 6);
+
+//callbacks
+/*
+function anyFunction(data, callback) {
+    async-process(data).then(   // do async request
+      function(result) {        // then on return
+        callback(result)        // execute callback
+      }
+    );
+    //rest the code
+}
+
+*/
