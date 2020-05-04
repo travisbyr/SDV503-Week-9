@@ -145,6 +145,8 @@ students.forEach(function (eachStudent, index) {
   otherFunction has the callback function in its parameter as a function definition
   it can execute the callback ANYTIME 
 
+----------------------------------------------------------------------------------------------------------
+
 const dat = []
   function myData(dataFromUser) {
     if (typeof dataaFromUser === 'string') {
@@ -158,7 +160,88 @@ const dat = []
 })
 
 const result = function input(dataInput, callback) {
-   dat.push(dataInput)
+   dat.push(dataTnput)
    callback(dataInput)
 }
+
+input({}, myData)
 */
+
+/*
+let pathToNextLocation
+fs.readFile('./file/location1.md'. 'utf-8', function(err, val) {
+  if(err) throw new error
+  pathToNextLocation = val;
+  fs.readFile(pathToNextLocation, 'utf-8', function(err, val) {
+    // do stuff!
+  })
+})
+
+1- Name your functions and declare them and pass the name only of the function
+as callbak.
+
+2- Separate your code into modules. And this is good coding in Express.js
+*/
+
+let myObject = {
+  firstName: "Travis",
+  lastName: "Byrman",
+};
+
+console.log(myObject);
+
+console.log(myObject.firstName);
+myObject.name = "Bob";
+console.log(myObject);
+
+/*
+1- Only use letters, digits, underscores.
+2- Must start with a letter or underscore
+3- Names are case-sensitive
+4- Must not match a reserved keyword in JS
+
+*/
+
+let students = {
+  name: "Luke",
+  class: "SDV503",
+  school: "NMIT",
+};
+
+console.log(Object.keys(students)); // Prints keys of  object
+
+//Object.freeze(students); // 'Freezes' object, prevents any change to it
+
+students.name = "Phil";
+
+console.log(students);
+
+console.log(Object.isFrozen(students));
+
+let anotherStudent = {
+  studentName: "Luke",
+  otherClass: "CSA",
+  school: "NMIT",
+};
+
+const newObj = Object.assign(students, anotherStudent);
+console.log(newObj);
+
+// Object.create()
+let person = {
+  name: "Jim",
+  age: 28,
+  school: "NMIT",
+};
+const guy = Object.create(person);
+
+console.log(guy.name);
+console.log(guy.age);
+
+// Object.is()
+let check = Object.is(students.name, guy.name);
+console.log(check);
+
+// Object.isExtensible()
+Object.freeze(person);
+console.log(Object.isExtensible(person));
