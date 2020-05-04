@@ -76,7 +76,7 @@ console.log('Hello World!'[6])
 const txt = ('Hello World!')
 console.log(txt[5] = "-") // Cannot modified string, instead make a new string using original values
 console.log(txt)
-*/
+
 //Anonymous functions
 
 const anotherWay = function(x) {console.log(x)}
@@ -84,7 +84,7 @@ anotherWay('Hello Class');
 
 //function literal
 (function(x, y) {console.log(x + y)})(5, 6);
-
+*/
 //callbacks
 /*
 function anyFunction(data, callback) {
@@ -108,7 +108,6 @@ functionOne(data, function(resultOne) {
     })
 })
 
-*/
 
 console.log("Hello World".length)
 
@@ -126,3 +125,40 @@ console.log(newText);
 
 const newTextToString = (newText.toString()) 
 console.log(newTextToString)
+*/
+
+/*
+Callback is also known as high-order function
+
+High-order function - passing a function to another function "otherFunction"
+
+Callback pattern
+
+Let students = ['Dale', 'Frank', 'Kyran', 'Aaron']
+
+students.forEach(function (eachStudent, index) {
+  console.log(index + 1 + "." + eachName) //
+
+  When we pass a function as an argument to another function
+  you are only passing a function definition
+
+  otherFunction has the callback function in its parameter as a function definition
+  it can execute the callback ANYTIME 
+
+const dat = []
+  function myData(dataFromUser) {
+    if (typeof dataaFromUser === 'string') {
+      console.log(dataFromUser)
+    } else if (typeof dataFromUser === "object") {
+      for (let item in dataFromUser) {
+        console.log(item + ":" + dataFromUser[item])
+      }
+    }
+  }
+})
+
+const result = function input(dataInput, callback) {
+   dat.push(dataInput)
+   callback(dataInput)
+}
+*/
