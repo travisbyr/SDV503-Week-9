@@ -7,7 +7,7 @@ number = 8.9999999;
 console.log(number);
 
 console.log((5.1234).toPrecision(3));
-*/
+
 
 function number(x, y) {
   const result = Number.parseInt(x, y); //Parse variable as an integer
@@ -76,7 +76,7 @@ console.log('Hello World!'[6])
 const txt = ('Hello World!')
 console.log(txt[5] = "-") // Cannot modified string, instead make a new string using original values
 console.log(txt)
-
+*/
 //Anonymous functions
 
 const anotherWay = function(x) {console.log(x)}
@@ -97,3 +97,27 @@ function anyFunction(data, callback) {
 }
 
 */
+
+/*
+
+functionOne(data, function(resultOne) {
+    functionTwo(resultOne, function(resultTwo) {
+        functionThree(resultTwo, function(resultThree){
+          // our code .......
+        })
+    })
+})
+
+*/
+
+console.log("Hello World".length)
+
+const text1 = 'first name'
+const text2 = 'last name'
+const fullName = text1.concat(text2)
+console.log(fullName)
+
+console.log(text1.toUpperCase())
+
+console.log(text1.trim()) // removes any whitespace at ends of string
+
