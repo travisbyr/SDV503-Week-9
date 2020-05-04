@@ -114,10 +114,15 @@ console.log("Hello World".length)
 
 const text1 = 'first name'
 const text2 = 'last name'
+
 const fullName = text1.concat(text2)
 console.log(fullName)
 
 console.log(text1.toUpperCase())
-
 console.log(text1.trim()) // removes any whitespace at ends of string
 
+const newText = new String('SDV')
+console.log(newText);
+
+const newTextToString = (newText.toString()) 
+console.log(newTextToString)
