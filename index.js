@@ -7,7 +7,7 @@ number = 8.9999999;
 console.log(number);
 
 console.log((5.1234).toPrecision(3));
-
+//testestets
 
 function number(x, y) {
   const result = Number.parseInt(x, y); //Parse variable as an integer
